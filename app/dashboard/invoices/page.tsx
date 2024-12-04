@@ -1,5 +1,7 @@
+import { fetchRevenue, fetchLatestInvoices, fetchCardData } from '../../lib/data';
 
+export default async function Page() {
+    const revenue = await fetchRevenue();
 
-export default function Page() {
     return <p>Invoices Page</p>
 }
